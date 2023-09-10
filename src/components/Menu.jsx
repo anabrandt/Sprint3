@@ -8,6 +8,7 @@ export default function Menu(){
         <nav>
             <div>
             <img src={logoPorto} alt="logo da porto seguro" />
+            
             </div>
 
             <span>  </span>
