@@ -7,16 +7,22 @@
 nav{
   display: flex;
   width: 100vw;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 8vh;
   background-color: royalblue;
+  
 
   & a{
     color: white;
-    font-size: 1.5em;
-    padding: 15px;
+    font-size: 1.0em;
+    padding: 20px;
   }
+}
+
+logo__porto{
+  align-items: flex-end;
+
 }
 
 main{
@@ -33,8 +39,8 @@ footer{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 5vh;
-  background-color: darkblue;
+  height: 15vh;
+  background-color: #346BCD;
   color: white;
   font-weight: bold;
 }
