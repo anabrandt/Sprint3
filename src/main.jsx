@@ -7,6 +7,7 @@ import Cadastro from './routes/Cadastro/index.jsx'
 import Entrar from './routes/Entrar/index.jsx'
 import Error from './routes/Error'
 import Home from './routes/Home/index.jsx'
+import Integrantes from './routes/Integrantes/index.jsx'
 import Principal from './routes/Principal/index.jsx'
 import Usuario from './routes/Usuario/index.jsx'
 import Vistoria from './routes/Vistoria/index.jsx'
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home/>
+      },
+      {
+        path:'/Integrantes',
+        element:<Integrantes/>
       },
       {
         path:'/principal/:id',
