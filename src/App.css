@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #F7F7F7;
 }
 
 nav{
@@ -10,18 +11,19 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  background-color: royalblue;
+  background-color: white;
   
 
   & a{
-    color: white;
+    color: black;
     font-size: 1.0em;
     padding: 20px;
   }
 }
 
-logo__porto{
-  align-items: flex-end;
+img{
+    width: 40px; /* Define a largura da imagem */
+    height: 40px; /* Define a altura da imagem */
 
 }
 
