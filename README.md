@@ -7,5 +7,5 @@
 #### Ana Carolina - Rm 552283
 #### Sofia Sprocatti - Rm 99208
 #### Felipe Cerezuella - RM551663
-#### 
+#### Vinicius Minei - Rm 98486
 #### 
