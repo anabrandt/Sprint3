@@ -19,8 +19,8 @@ export default function Entrar(){
     return(
         <main>
             <h1>Crie uma conta </h1>
-
             <form className="styles.form" onSubmit={handleSignupForm}>
+<div>
             <label htmlFor="cpf">CPF:</label>
              <input 
              type="text" 
@@ -30,9 +30,10 @@ export default function Entrar(){
              required 
              value={cpf}
              onChange={(event) => setCpf(event.target.value)}
-             /><br
              />
-
+</div>
+<br/>
+<div>
              <label htmlFor="nome">Nome Completo:</label>
             <input 
             type="text" 
@@ -42,10 +43,10 @@ export default function Entrar(){
             required 
             value={nome}
             onChange={(event) => setNome(event.target.value)}
-
-            /><br />
-
-            {/* Campo Data de Nascimento */}
+            />
+</div>
+<br/>
+<div>
             <label htmlFor="dataNascimento">Data de Nascimento:</label>
             <input 
             type="date" 
@@ -53,9 +54,10 @@ export default function Entrar(){
             name="dataNascimento" 
             value={dataNascimento}
             onChange={(event) => setdataNascimento(event.target.value)}
-            /><br />
-
-            {/* Campo Email */}
+            />
+</div>
+<br/>
+<div className="campo">
             <label htmlFor="email">Email:</label>
             <input 
             type="email" 
@@ -65,8 +67,10 @@ export default function Entrar(){
             required 
             value ={email}
             onChange={(event) => setEmail(event.target.value)}
-            /><br />
+            /><br/>
+</div>
 
+<div className="campo">
             <label htmlFor="senhal">Senha:</label>
             <input 
             type="senha" 
@@ -75,18 +79,19 @@ export default function Entrar(){
             required 
             value ={senha}
             onChange={(event) => setSenha(event.target.value)}
-            /><br />
+            /><br/>
+</div>
 
-            {/* Botão de Confirmação do Cadastro */}
-            <input 
+<div  className="botao">
+            <button 
             type="submit" 
-            value="Cadastrar" /><br />
+            value="Cadastrar">Cadastrar</button>
+            <br/>
+</div>
 
             {/* Link para Fazer Login */}
             <Link to='/Cadastro'>Já tem uma conta?Clique aqui para fazer login</Link>
-
             </form>
-
         </main>
     )
 }

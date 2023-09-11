@@ -28,9 +28,7 @@ export default function Cadastro(){
             type="submit" 
             value="Entrar"/>
 
-            <Link to='/Entrar'>Esqueceu sua senha?</Link><br
-             />
-
+            <Link to='/Entrar'>Esqueceu sua senha?</Link><br/>
              <Link to='/Entrar'>Ainda não é cadastrado? Clique aqui para fazer o cadastro</Link>
             
         </main>

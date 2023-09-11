@@ -10,15 +10,13 @@ export default function Menu(){
             <Link to="/">
              <img src={logoPorto} alt="logo da Porto Seguro" />
              </Link>
-            
             </div>
-
-            <span>  </span>
 
             <div>
             <img src={profile} alt="icone de usuario" />   
             <Link to='/Entrar'>Entrar</Link>
             </div>
         </nav>
+
     )
 }

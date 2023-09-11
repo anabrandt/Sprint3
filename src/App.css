@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #F7F7F7;
 }
 
 nav{
@@ -31,7 +30,6 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 87vh;
 }
@@ -58,3 +56,47 @@ form{
   max-width: 40vw;
 }
 
+input{
+  border-radius: 7px;
+  font-family: sans-serif;
+  font-size: 1em;
+  
+}
+button{
+  border-radius: 9px;
+  font-family: sans-serif;
+  font-size: 1em;  
+  background: #0046C0;
+  border: none;
+  color: #F7F7F7;
+
+}
+
+.campo{
+  margin-bottom: 1em;
+  margin-bottom: 0.2em;
+  /* color: #59429d; */
+  display: block;
+}
+ 
+/* estilização da margem do botao */
+.botao{
+    font-size: 1.2em;
+    border-radius: 20px;
+    background: #0046C0;
+    margin-bottom: 1em;
+    color: #0046C0;
+    padding: 0.5em 5em;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+
+.section__vistoria{
+  background: linear-gradient(to right, #0052d4, #c5cceb, #ffffff);
+  height: 30vh;
+
+}
