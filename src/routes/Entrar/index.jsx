@@ -9,6 +9,8 @@ export default function Entrar(){
     const[email, setEmail] = useState('')
     const[senha, setSenha] = useState('')
 
+    
+
       const handleSignupForm = (event) => {
         event.preventDefault()
         console.log({cpf,nome,dataNascimento,email,senha})

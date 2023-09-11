@@ -1,6 +1,11 @@
 
 
 export default function Cadastro(){
+    const [loginState, setLoginState]= useState({
+        email: '',
+        senha: ''
+    })
+
     return(
         <main>
             <h1>Login</h1>
@@ -19,6 +24,10 @@ export default function Cadastro(){
             required 
             /><br />
             </form>
+
+            <input 
+            type="submit" 
+            value="Entrar" /><br />
             
         </main>
     )
