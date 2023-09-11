@@ -36,7 +36,7 @@ export default function Entrar(){
              <label htmlFor="nome">Nome Completo:</label>
             <input 
             type="text" 
-            placeholder="Insira seu nome completo"
+            placeholder="Nome completo"
             id="nome" 
             name="nome" 
             required 
@@ -80,7 +80,7 @@ export default function Entrar(){
             {/* Botão de Confirmação do Cadastro */}
             <input 
             type="submit" 
-            value="Confirmar Cadastro" /><br />
+            value="Cadastrar" /><br />
 
             {/* Link para Fazer Login */}
             <Link to='/Cadastro'>Já tem uma conta?Clique aqui para fazer login</Link>
