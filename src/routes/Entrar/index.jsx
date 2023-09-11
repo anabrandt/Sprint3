@@ -1,40 +1,90 @@
+import { useState } from "react";
+import { Link } from "react-router-dom"
+
 
 export default function Entrar(){
-    const LoginWithGoogle = () => {
-        alert('Realizar login com o Google');
+    const[cpf, setCpf] = useState('')
+    const[nome, setNome] = useState('')
+    const[dataNascimento, setdataNascimento] = useState('')
+    const[email, setEmail] = useState('')
+    const[senha, setSenha] = useState('')
+
+      const handleSignupForm = (event) => {
+        event.preventDefault()
+        console.log({cpf,nome,dataNascimento,email,senha})
       }
      
     return(
         <main>
             <h1>Crie uma conta </h1>
 
-            <form className="styles.form" >
+            <form className="styles.form" onSubmit={handleSignupForm}>
             <label htmlFor="cpf">CPF:</label>
-             <input type="text" id="cpf" name="cpf" required /><br />
+             <input 
+             type="text" 
+             placeholder="Insira seu cpf"
+             id="cpf" 
+             name="cpf" 
+             required 
+             value={cpf}
+             onChange={(event) => setCpf(event.target.value)}
+             /><br
+             />
 
              <label htmlFor="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required /><br />
+            <input 
+            type="text" 
+            placeholder="Insira seu nome completo"
+            id="nome" 
+            name="nome" 
+            required 
+            value={nome}
+            onChange={(event) => setNome(event.target.value)}
+
+            /><br />
 
             {/* Campo Data de Nascimento */}
             <label htmlFor="dataNascimento">Data de Nascimento:</label>
-            <input type="date" id="dataNascimento" name="dataNascimento" required /><br />
+            <input 
+            type="date" 
+            id="dataNascimento" 
+            name="dataNascimento" 
+            value={dataNascimento}
+            onChange={(event) => setdataNascimento(event.target.value)}
+            /><br />
 
             {/* Campo Email */}
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br />
+            <input 
+            type="email" 
+            placeholder="Insira seu email"
+            id="email" 
+            name="email" 
+            required 
+            value ={email}
+            onChange={(event) => setEmail(event.target.value)}
+            /><br />
+
+            <label htmlFor="senhal">Senha:</label>
+            <input 
+            type="senha" 
+            placeholder="Crie uma senha"
+            name="email" 
+            required 
+            value ={senha}
+            onChange={(event) => setSenha(event.target.value)}
+            /><br />
 
             {/* Botão de Confirmação do Cadastro */}
-            <input type="submit" value="Confirmar Cadastro" /><br />
+            <input 
+            type="submit" 
+            value="Confirmar Cadastro" /><br />
 
             {/* Link para Fazer Login */}
-            <p>Já tem uma conta? <a href="#">Clique aqui para fazer login</a></p>
-
-            {/* Botão de Login com Google */}
-            <button onClick={LoginWithGoogle}>
-            <img src="" alt="Login com Google" /> Login com Google
-            </button>
+            <Link to='/Cadastro'>Já tem uma conta?Clique aqui para fazer login</Link>
 
             </form>
+
         </main>
     )
 }
