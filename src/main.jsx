@@ -12,6 +12,8 @@ import Principal from './routes/Principal/index.jsx'
 import Usuario from './routes/Usuario/index.jsx'
 import Vistoria from './routes/Vistoria/index.jsx'
 import Vistoria2 from './routes/Vistoria2/index.jsx'
+import FotoBike from './routes/FotoBike/index.jsx'
+import ResultadoVistoria from './routes/ResultadoVistoria/index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
         element:<Integrantes/>
       },
       {
-        path:'/principal/:id',
+        path:'/principal',
         element:<Principal/>
       },
       {
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
       path:'/Vistoria2',
       element: <Vistoria2/>
     },
+    {
+      path:'/fotobike',
+      element: <FotoBike/>
+    },
+    {
+    path:'/ResultadoVistoria',
+    element: <ResultadoVistoria/>
+  },
       // {
       //   path: '/antiga',
       //   element: <Navigate to='/'/>

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
 
-
 export default function Home(){
     return(
       <main>
 
+
 <section>
               <div className="section__vistoria">
-                <h1>Vistoria de Bicicleta</h1>
+                <h1 className="paragrafo__vistoria">Vistoria de Bicicletas</h1>
                 <p>Automatização com precisão e rapidez</p>
               </div>
  </section>

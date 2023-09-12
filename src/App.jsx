@@ -5,7 +5,6 @@ import Footer from './components/footer'
 import Menu from './components/Menu'
 
 
-
 function App() {
    return(
     <>

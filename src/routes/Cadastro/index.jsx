@@ -20,13 +20,12 @@ export default function Cadastro(){
             type="senha" 
             placeholder="Insira sua senha"
             required 
-            /><br
-            />
+            /><br/>
             </form>
 
-            <input 
-            type="submit" 
-            value="Entrar"/>
+<Link to="/principal">
+             <button type="submit"  value="Entrar" > Entrar </button>
+    </Link>
 
             <Link to='/Entrar'>Esqueceu sua senha?</Link><br/>
              <Link to='/Entrar'>Ainda não é cadastrado? Clique aqui para fazer o cadastro</Link>
