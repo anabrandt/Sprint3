@@ -11,7 +11,9 @@ nav{
   align-items: center;
   height: 8vh;
   background-color: white;
-  
+  margin: 10px;
+  padding: 70px;
+
 
   & a{
     color: black;
@@ -26,6 +28,11 @@ img{
 
 }
 
+img.logo__Porto{
+  margin-top: 10px;
+  margin: 20px;
+}
+
 main{
   display: flex;
   flex-direction: column;
@@ -36,8 +43,43 @@ main{
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+h1.paragrafo__vistoria{
+  padding: 7px;
+  margin-top: 10px;
+}
+
+.section__vistoria {
+  display: flex;
+  align-items: center; /* Alinha os elementos verticalmente no centro */
+}
+
+div.text2 {
+  flex: 1; /* Ocupa o espaço restante no contêiner flexível */
+  padding: 20px; /* Adicione espaço ao redor do texto */
+}
+
+p.txt__vistoria{
+  text-align: right;
+}
 
 
+div.container__ajuda{
+  background-color: #F7F7F7;
+  padding: 40px;
+}
+
+h2.titulo__ajuda{
+  text-align: center;
+}
+
+p.paragrafo__ajuda{
+  margin: 10px;
+  padding: 10px;
+}
+
+h2.titulo__beneficios{
+  text-align: center;
 }
 
 footer{
@@ -75,7 +117,6 @@ button{
 .campo{
   margin-bottom: 1em;
   margin-bottom: 0.2em;
-  /* color: #59429d; */
   display: block;
 }
  

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import img1 from './img/'
 
 export default function Home(){
     return(
@@ -6,22 +7,28 @@ export default function Home(){
 
 
 <section>
-              <div className="section__vistoria">
-                <h1 className="paragrafo__vistoria">Vistoria de Bicicletas</h1>
-                <p>Automatização com precisão e rapidez</p>
-              </div>
- </section>
+  <div className="section__vistoria">
+    <div className="content">
+      <div className="text2">
+        <h1 className="paragrafo__vistoria">Vistoria de Bicicletas</h1>
+        <p className="txt__vistoria">Automatização com precisão e rapidez</p>
+      </div>
+      <div className="image__vistoria1">
+      </div>
+    </div>
+  </div>
+</section>
 
  <section className="section__ajuda">
-            <div>
-                <h2>A vistoria veio pra te ajudar</h2>
-                <p>A vistoria virtual tem se tornado cada vez mais comum em diversos setores. Além disso, a vistoria virtual pode ser mais segura, evitando a exposição a riscos e garantindo a autenticidade do processo de inspeção.</p>
+            <div className="container__ajuda">
+                <h2 className="titulo__ajuda">A vistoria veio pra te ajudar</h2>
+                <p className="paragrafo__ajuda">A vistoria virtual tem se tornado cada vez mais comum em diversos setores. Além disso, a vistoria virtual pode ser mais segura, evitando a exposição a riscos e garantindo a autenticidade do processo de inspeção.</p><br></br>
             </div>
  </section>
             
 <section className="beneficios__vistoria">
               <div>
-                <h2>Beneficios da vistoria digital</h2>
+                <h2 className="titulo__beneficios">Beneficios da vistoria digital</h2>
               </div>
 
               <div>
