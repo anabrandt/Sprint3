@@ -16,7 +16,7 @@ export default function FotoBike(){
         <main>
             <div>
                 <h2>Fotos da bicicleta</h2>
-            <img src={scan} alt="scan bike" />               
+            <img className="scanbike" src={scan} alt="scan bike" />               
             </div>
         <div>
             <button>Proxima Foto</button>

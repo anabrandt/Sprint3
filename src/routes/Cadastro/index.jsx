@@ -3,34 +3,43 @@ import { Link } from "react-router-dom"
 export default function Cadastro(){
 
     return(
-        <main>
-            <div>
-            <h1  className="titulo__entrar" >Entre em sua conta</h1><br/>
-            </div>
+<main className="container">
+      <div>
+        <h1 className="titulo__entrar">Entre em sua conta</h1>
+      </div>
 
-            <form>
-            <input 
-             type="text" 
-             placeholder="E-mail"
-             required 
-             /><br
-             />
+      <form className="form">
+        <div className="campo">
+          <label htmlFor="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Insira seu e-mail"
+            required
+          />
+        </div>
 
-         <input 
-            type="senha" 
+        <div className="campo">
+          <label htmlFor="senha">Senha:</label>
+          <input
+            type="password"
+            id="senha"
             placeholder="Insira sua senha"
-            required 
-            /><br/>
-            </form>
+            required
+          />
+        </div>
 
-<Link to="/principal">
-             <button type="submit"  value="Entrar" > Entrar </button>
-    </Link>
+        <Link to="/principal">
+          <button type="submit" className="botao-entrar">
+            Entrar
+          </button>
+        </Link>
+      </form>
 
-            <Link to='/Entrar'>Esqueceu sua senha?</Link><br/>
-             <Link to='/Entrar'>Ainda não é cadastrado? Clique aqui para fazer o cadastro</Link>
-            
-        </main>
+      <Link to="/">Esqueceu sua senha?</Link>
+      <br />
+      <Link to="/cadastro">Ainda não é cadastrado? Clique aqui para fazer o cadastro</Link>
+    </main>
     )
 
     

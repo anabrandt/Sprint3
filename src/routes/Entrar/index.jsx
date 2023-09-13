@@ -18,80 +18,77 @@ export default function Entrar(){
      
     return(
         <main>
-            <h1>Crie uma conta </h1>
-            <form className="styles.form" onSubmit={handleSignupForm}>
-<div>
-            <label htmlFor="cpf">CPF:</label>
-             <input 
-             type="text" 
-             placeholder="Insira seu cpf"
-             id="cpf" 
-             name="cpf" 
-             required 
-             value={cpf}
-             onChange={(event) => setCpf(event.target.value)}
-             />
-</div>
-<br/>
-<div>
-             <label htmlFor="nome">Nome Completo:</label>
-            <input 
-            type="text" 
-            placeholder="Nome completo"
-            id="nome" 
-            name="nome" 
-            required 
-            value={nome}
-            onChange={(event) => setNome(event.target.value)}
-            />
-</div>
-<br/>
-<div>
-            <label htmlFor="dataNascimento">Data de Nascimento:</label>
-            <input 
-            type="date" 
-            id="dataNascimento" 
-            name="dataNascimento" 
-            value={dataNascimento}
-            onChange={(event) => setdataNascimento(event.target.value)}
-            />
-</div>
-<br/>
-<div className="campo">
-            <label htmlFor="email">Email:</label>
-            <input 
-            type="email" 
-            placeholder="Insira seu email"
-            id="email" 
-            name="email" 
-            required 
-            value ={email}
-            onChange={(event) => setEmail(event.target.value)}
-            /><br/>
-</div>
+            <h1 className="titulo__create">Crie uma conta</h1>
+<form className="signup-form" onSubmit={handleSignupForm}>
+  <div className="form-group">
+    <label htmlFor="cpf">CPF:</label>
+    <input
+      type="text"
+      placeholder="Insira seu cpf"
+      id="cpf"
+      name="cpf"
+      required
+      value={cpf}
+      onChange={(event) => setCpf(event.target.value)}
+    />
+  </div>
 
-<div className="campo">
-            <label htmlFor="senhal">Senha:</label>
-            <input 
-            type="senha" 
-            placeholder="Crie uma senha"
-            name="email" 
-            required 
-            value ={senha}
-            onChange={(event) => setSenha(event.target.value)}
-            /><br/>
-</div>
+  <div className="form-group">
+    <label htmlFor="nome">Nome Completo:</label>
+    <input
+      type="text"
+      placeholder="Nome completo"
+      id="nome"
+      name="nome"
+      required
+      value={nome}
+      onChange={(event) => setNome(event.target.value)}
+    />
+  </div>
 
-<div  className="botao">
-            <button 
-            type="submit" 
-            value="Cadastrar">Cadastrar</button>
-            <br/>
-</div>
+  <div className="form-group">
+    <label htmlFor="dataNascimento">Data de Nascimento:</label>
+    <input
+      type="date"
+      id="dataNascimento"
+      name="dataNascimento"
+      value={dataNascimento}
+      onChange={(event) => setdataNascimento(event.target.value)}
+    />
+  </div>
 
-            {/* Link para Fazer Login */}
-            <Link to='/Cadastro'>Já tem uma conta?Clique aqui para fazer login</Link>
-            </form>
+  <div className="form-group">
+    <label htmlFor="email">Email:</label>
+    <input
+      type="email"
+      placeholder="Insira seu email"
+      id="email"
+      name="email"
+      required
+      value={email}
+      onChange={(event) => setEmail(event.target.value)}
+    />
+  </div>
+
+  <div className="form-group">
+    <label htmlFor="senha">Senha:</label>
+    <input
+      type="password" // Alterei o tipo para "password" para tratar como senha
+      placeholder="Crie uma senha"
+      name="senha"
+      required
+      value={senha}
+      onChange={(event) => setSenha(event.target.value)}
+    />
+  </div>
+
+  <div>
+    <button type="submit" className="signup-button">Cadastrar</button>
+  </div>
+
+  {/* Link para Fazer Login */}
+  <Link className="clique_login" to="/Cadastro">Já tem uma conta? Clique aqui para fazer login</Link>
+</form>
         </main>
     )
 }

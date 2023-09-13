@@ -31,6 +31,9 @@ img{
 img.logo__Porto{
   margin-top: 10px;
   margin: 20px;
+  width: 50px;
+  height: 50px; 
+
 }
 
 main{
@@ -66,7 +69,7 @@ p.txt__vistoria{
 
 div.container__ajuda{
   background-color: #F7F7F7;
-  padding: 40px;
+  padding: 7px;
 }
 
 h2.titulo__ajuda{
@@ -82,14 +85,220 @@ h2.titulo__beneficios{
   text-align: center;
 }
 
+div.beneficios__vistoria {
+  display: flex;
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  gap: 20px; /* Espaço vertical entre os elementos */
+}
+
+.Seguranca, .Pode-ser-feita, .Mais-rapido {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+div.container_benef{
+  margin: 10px;
+  padding: 20px;
+}
+
+img.sg_img1{
+  max-width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: auto;
+}
+
+/* Estilização do formulário */
+
+h1.titulo__create{
+  text-align: center;
+}
+
+.signup-form {
+  text-align: center; /* Centraliza o formulário no meio da página */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilização das classes .form-group */
+.form-group {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Estilização dos labels */
+.form-group label {
+  display: block; /* Coloca o label em uma nova linha */
+  margin-bottom: 5px;
+}
+
+/* Estilização dos inputs */
+.form-group input {
+  border: 1px solid #0046C0; /* Cor da borda */
+  border-radius: 20px; /* Bordas redondas */
+  padding: 10px;
+  width: 100%;
+}
+
+/* Estilização do botão de cadastro */
+.signup-button {
+  background-color: #0046C0; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none;
+  border-radius: 20px; /* Bordas redondas */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #003BA4; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização do link de fazer login */
+form a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a.clique_login{
+  color: black;
+}
+
+/* Estilização para centralizar o formulário */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f0f0f0; /* Cor de fundo de exemplo */
+}
+
+/* Estilização para os campos de entrada */
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.campo label {
+  margin-bottom: 5px;
+}
+
+.campo input[type="email"],
+.campo input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Estilização para o botão */
+.botao-entrar {
+  background-color: #0046C0;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.botao-entrar:hover {
+  background-color: #003ea6; /* Cor de destaque ao passar o mouse */
+}
+
+main.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+img.imagem__vistoria {
+  max-width: 300px; /* Defina o tamanho desejado para a imagem */
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+h1.imagem__vistoria  {
+  margin-top: 20px;
+}
+
+
+        /* Estilize o contêiner principal */
+        section {
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+      }
+
+      /* Estilize as divs que contêm as informações das bicicletas */
+      .vistoria__bike1,
+      .vistoria__bike2 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 20px;
+      }
+
+      /* Estilize as imagens */
+      img.vistoria__bike1 ,
+      img.vistoria__bike2  {
+          max-width: 200px; /* Defina a largura máxima das imagens */
+          height: auto;
+          width: 200px;
+          height: 200px;
+      }
+
+      /* Estilize os títulos (h4) */
+      h4.vistoria__bike1 ,
+      h4.vistoria__bike2  {
+          text-align: right;
+      }
+
+      /* Estilize os parágrafos (p) */
+      .vistoria__bike1 p,
+      .vistoria__bike2 p {
+          text-align: right;
+      }
+img.scanbike{
+  height: auto;
+  width: 200px;
+  height: 200px;
+
+}
+
+
+
+.integrantes {
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 footer{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 15vh;
   background-color: #346BCD;
   font-weight: bold;
+
 }
 
 form{

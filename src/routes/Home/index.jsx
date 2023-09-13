@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom"
-import img1 from './img/'
+import img1 from "./img/img1.svg"
+import img2 from "./img/img2.svg"
+import img3 from "./img/img3.svg"
+
 
 export default function Home(){
     return(
@@ -26,35 +28,33 @@ export default function Home(){
             </div>
  </section>
             
-<section className="beneficios__vistoria">
-              <div>
+<section>
+  <div className="container_benef">
+                  <div>
                 <h2 className="titulo__beneficios">Beneficios da vistoria digital</h2>
               </div>
 
-              <div>
-                <p>Mais segurança e precisão nas vistorias.</p>
+  <div className="beneficios__vistoria">
+               <div className="seguranca">
+             <img className="sg_img1" src={img1} alt="logo da Porto Seguro" />
+                <p className="p__beneficios1">Mais segurança e precisão nas vistorias.</p>
               </div>
 
               <div>
-                <p>Pode ser feita em qualquer lugar</p>
+             <img className="sg_img1" src={img2} alt="logo da Porto Seguro" />
+                <p className="p__beneficios2">Pode ser feita em qualquer lugar</p>
               </div>
 
               <div>
-                <p>Mais rápido e economiza o seu tempo</p>
-              </div>
+             <img className="sg_img1" src={img3} alt="logo da Porto Seguro" />
+                <p className="p__beneficios3">Mais rápido e economiza o seu tempo</p>
+              </div>   
+  </div>
+
+  </div>
+
 </section>
 
-<section className="faqvistoria">
-            <div>
-                <h3>Tire suas dúvidas sobre a vistoria</h3>
-            </div>
-
-            <div>
-                <h4>Como faço a vistoria</h4>
-                <p>Se cadastrando e entrando em nosso sistema, após isso entre na página “vistoria” e siga os passos, você vai precisar enviar um formulário com algumas informações da bicicleta e depois enviar fotos da bicicleta como solicitado.</p>
-            </div>
-
-</section>
 
              </main>
     )
